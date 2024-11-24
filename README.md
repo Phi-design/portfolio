@@ -1,2 +1,2 @@
 # portfolio
-My first portfolio on Github
+My portfolio on Github
