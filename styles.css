@@ -1,4 +1,10 @@
-﻿.general {
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.general {
     font-family: 'Roboto', sans-serif;
     background-color: white;
     color: black;
@@ -6,6 +12,9 @@
 
 .minimal {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 h1 {
@@ -139,6 +148,51 @@ h1 {
 .gene-navbar .dropdown-item:hover {
     background-color: rgba(0, 0, 0, 0.1) !important;
 }
+
+
+    /* Button styles */
+    #invert-button {
+      position: fixed; /* Fixed position */
+      left: 50%; /* Center horizontally */
+      bottom: 10px; /* Ensure it stays 10px above the bottom */
+      transform: translateX(-50%); /* Center alignment */
+      width: 40px; /* Square size */
+      height: 40px; /* Square size */
+      background-color: white; /* Initial green background */
+      border-radius: 10px; /* Slightly rounded corners */
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border: none; /* Remove default border */
+      outline: none; /* Remove default outline */
+      user-select: none; /* Prevent text selection */
+      margin: 0; /* Ensure no margin */
+      z-index: 1000; /* Ensure it stays on top */
+      transition: width 0.3s ease, height 0.3s ease;
+    }
+
+    /* Prevent button from moving on click */
+    #invert-button:focus {
+      outline: none;
+      border: none;
+      width: 40px; /* Square size */
+      height: 40px; /* Square size */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transform: translateX(-50%) translateY(0); /* Ensure it stays centered */
+      margin: 0; /* Ensure no margin */
+      transition: width 0.3s ease, height 0.3s ease;
+    }
+        
+    #invert-button:active {
+      outline: none;
+      border: none;
+      width: 30px; /* Square size */
+      height: 30px; /* Square size */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transform: translateX(-50%) translateY(0); /* Ensure it stays centered */
+      margin: 0; /* Ensure no margin */
+      transition: width 0.3s ease, height 0.3s ease;
+    }
+
 
 
 
