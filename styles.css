@@ -65,8 +65,10 @@ h1 {
     background-color: transparent !important;
     z-index: 3;
     position: absolute;
-    width: 100%;
+    width: 90%; /* Set a specific width */
     margin: 50px;
+    left: 40px; /* Move the navbar to the left */
+    right: auto; /* Ensure the right position is not negatively set */
 }
 
 .navbar-nav .nav-link {
@@ -119,8 +121,10 @@ h1 {
     background-color: white !important;
     z-index: 3;
     position: relative;
-    width: 100%;
+    width: 90%; /* Set a specific width */
     margin: 50px;
+    left: 40px; /* Move the navbar to the left */
+    right: auto; /* Ensure the right position is not negatively set */
 }
 
 .gene-navbar .nav-link {
