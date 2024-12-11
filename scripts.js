@@ -65,7 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function () {
     // Add 'typing' class when user types in the input
     $('.form-control').on('input', function () {
-        $(this).addClass('typing').removeClass('error');
+        // Only add 'typing' class if there's content
+        if ($(this).val().trim().length > 0) {
+            $(this).addClass('typing').removeClass('error');
+        } else {
+            $(this).removeClass('typing');
+        }
     });
 
     // Remove 'typing' class on blur if the input is empty
