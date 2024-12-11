@@ -92,7 +92,7 @@ h1 {
     position: absolute;
     width: 90%; /* Set a specific width */
     margin: 50px;
-    left: 40px; /* Move the navbar to the left */
+    left: 80px; /* Move the navbar to the left */
     right: auto; /* Ensure the right position is not negatively set */
 }
 
@@ -145,10 +145,7 @@ h1 {
 .gene-navbar {
     background-color: white !important;
     z-index: 3;
-    position: relative;
-    width: 90%; /* Set a specific width */
-    margin: 50px;
-    left: 40px; /* Move the navbar to the left */
+    position: relative; 
     right: auto; /* Ensure the right position is not negatively set */
 }
 
@@ -366,19 +363,6 @@ hr {
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
-button.btn.btn-outline-light {
-    background-color: white;
-    color: #D3F191;
-    border: 2px solid #D3F191;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
-}
-
-button.btn.btn-outline-light:hover {
-    background-color: #205306;
-    color: #ffffff;
-    border: 2px solid #205306; 
-}
-
 .contact-info p,
 .contact-info a {
     text-decoration: none;
@@ -393,13 +377,26 @@ button.btn.btn-outline-light:hover {
 /* Dynamic typing styles */
 .form-control.typing {
     border: 2px solid rgba(142, 226, 31, 0.3) !important; 
-    background-color: #000000 !important;
+    background-color: #2d2d2d !important;
     color: #D3F191 !important;
 }
 
-/* Error state styles */
 .form-control.error {
-    border: 2px solid #ff0000 !important; /* Red border for errors */
+    border: 2px solid #ff0000; /* Red border for errors */
+    background-color: #ffeeee; /* Light red background */
+}
+
+button.btn.btn-outline-light {
+    background-color: #205306;
+    color: #ffffff;
+    border: 2px solid #205306;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+button.btn.btn-outline-light:hover {
+    background-color: white;
+    color: #D3F191;
+    border: 2px solid #D3F191;
 }
 
 /* Previous styles remain the same */
@@ -409,13 +406,13 @@ button.btn.btn-outline-light:hover {
     transition: transform 0.3s ease;
 }
 
-    .portfolio-item:hover {
-        transform: translateY(-5px);
-    }
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
 
-        .portfolio-item:hover .overlay {
-            opacity: 1;
-        }
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
 
 .video-container {
     position: relative;
@@ -425,14 +422,14 @@ button.btn.btn-outline-light:hover {
     border-radius: 8px;
 }
 
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-    }
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
 /* Add Instagram-specific styling */
 .instagram-container {
@@ -443,10 +440,10 @@ button.btn.btn-outline-light:hover {
     overflow: hidden;
 }
 
-    .instagram-container iframe {
-        width: 100% !important;
-        margin: 0 !important;
-    }
+.instagram-container iframe {
+    width: 100% !important;
+    margin: 0 !important;
+}
 
 .modal-content {
     background-color: transparent;
